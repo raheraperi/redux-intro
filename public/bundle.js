@@ -21462,12 +21462,11 @@ var _Image2 = _interopRequireDefault(_Image);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Images = function Images(_ref) {
-  var images = _ref.images;
+var Images = function Images(props) {
   return _react2.default.createElement(
     'div',
     null,
-    images.map(function (image) {
+    props.images.map(function (image) {
       return _react2.default.createElement(_Image2.default, _extends({ key: image.id
       }, image));
     })
@@ -21500,8 +21499,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Image = function Image(_ref) {
-  var id = _ref.id,
-      imgURL = _ref.imgURL;
+  var imgURL = _ref.imgURL;
   return _react2.default.createElement(
     'div',
     null,

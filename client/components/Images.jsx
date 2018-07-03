@@ -3,9 +3,9 @@ import {connect} from 'react-redux'
 
 import Image from './Image'
 
-const Images = ({images}) => (
+const Images = (props) => (
   <div>
-    {images.map(image =>
+    {props.images.map(image =>
       <Image key={image.id}
         {...image}
       />

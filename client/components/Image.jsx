@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Image = ({id, imgURL}) => (
+const Image = ({imgURL}) => (
   <div> <img src={imgURL}/></div>
 )
 
